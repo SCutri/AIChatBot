@@ -1,0 +1,59 @@
+/* src/components/ChatList/styles/ChatListItem.module.css */
+
+.chatListItem {
+  padding: 10px;
+  border-bottom: 1px solid #7e5059;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* Align items on both ends of the container */
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 17px;
+  letter-spacing: .02rem;
+}
+
+button {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.chatListItem:hover {
+  background-color: #6b444c; /* Slightly lighter color for hover effect */
+}
+
+.chatListItem a {
+  color: #FFFFFF; /* White color for link text */
+  text-decoration: none; /* Removes underline */
+}
+
+.chatListItem a:hover {
+  color: #cecece; /* Changes color on hover */
+}
+
+.selected {
+  background-color: #6b444c; /* Even darker color for selected item */
+}
+  
+.selected:hover {
+  background-color: #6b444c; /* Same color for hover over selected item */
+}
+
+.trashButton {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cecece;
+  margin-left: auto; /* Push the button to the right */
+  margin-right: 10px; /* Add space to the right */
+}
+
+.trashButton:hover {
+  color: #e63946;
+}
+
+.gg-trash:hover {
+  color: #e63946;
+}

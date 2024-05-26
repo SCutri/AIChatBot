@@ -1,0 +1,126 @@
+/* src/components/Chat/styles/ChatMessages.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  flex-grow: 1;
+  list-style: none; /* Remove bullets from list items */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  letter-spacing: 1.14px;
+  font-size: 14px;
+  color: #1b1b1b;
+  line-height: 1.55;
+  font-weight: 500;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.user-message, .bot-message {
+  padding: 37px 0;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.user-message {
+  background-color: #ffffff;
+  border-bottom: .1px solid #d1d1d1;
+  border-top: .1px solid #d1d1d1;
+}
+
+.bot-message {
+  background-color: #ede7e7;
+}
+
+.message-content {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0px;
+  position: relative;
+}
+
+.editForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.editTextarea {
+  width: 100%;
+  min-height: 40px;
+  max-height: 500px;
+  resize: none;
+  font-size: 17px;
+  padding: 15px 5px 15px 20px;
+}
+
+.saveButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #530619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.saveButton:hover {
+  background-color: #8e5b68;
+}
+
+.editButtonContainer {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.editButton {
+  background-color: #530619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: #8e5b68;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cancelButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #dadada;
+  color: #3d0311;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.cancelButton:hover {
+  background-color: #9b9b9b;
+}

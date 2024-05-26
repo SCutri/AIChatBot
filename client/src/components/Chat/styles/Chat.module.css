@@ -1,0 +1,42 @@
+/* src/components/Chat/styles/Chat.module.css */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set the height to the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: #252525;
+}
+
+.chat > :last-child {
+  position: sticky;
+  bottom: 0;
+}
+
+.messagesContainer {
+  flex: 1;
+  display: flex;
+  flex-shrink: 1; /* Add this line */
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+}
+
+.messagesContainer > :first-child {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.instructionsButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: #530619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

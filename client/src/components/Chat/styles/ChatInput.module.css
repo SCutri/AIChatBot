@@ -1,0 +1,71 @@
+/* src/components/Chat/styles/ChatInput.module.css */
+
+.container {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-top: 1.5px solid #aea3a6;
+}
+
+.messageInputField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 15vh;
+  max-height: 20vh;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.input {
+  width: 40%;
+  min-height: 60px;
+  max-height: calc(100vh - 30px - 80vh);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #39000e;
+  border-radius: 4px;
+  margin-right: 10px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #39000e;
+}
+
+.sendButton {
+  width: 100px;
+  height: 45px;
+  background-color: #530619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 10px;
+  font-size: 15.5px;
+}
+
+.sendButton:hover {
+  background-color: #7a414d;
+}
+
+.terminateButton {
+  width: 100px;
+  height: 45px;
+  background-color: #530619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-right: 30px;
+  font-size: 15.5px;
+}
+
+.terminateButton:hover {
+  background-color: #7a414d;
+}

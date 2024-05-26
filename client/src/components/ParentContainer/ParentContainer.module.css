@@ -1,0 +1,9 @@
+/* src/components/ParentContainer/ParentContainer.module.css */
+
+.parentContainer {
+  display: grid;
+  grid-template-columns: 12% 88%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}

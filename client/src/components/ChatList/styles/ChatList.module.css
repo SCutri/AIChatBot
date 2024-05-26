@@ -1,0 +1,16 @@
+/* src/components/ChatList/styles/ChatList.module.css */
+
+.chatList {
+  border-right: 1px solid #39000e;
+  padding: 10px;
+  padding-top: 35px;
+  position: relative;
+  top: 0;
+  height: 100vh; /* Set the height to the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+  display: flex;
+  flex-direction: column;
+  background-color: #39000e;
+  color: #e6e6e6; /* Light color for text */
+  box-sizing: border-box;
+}

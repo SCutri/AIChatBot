@@ -1,0 +1,5 @@
+run venv: & c:/Users/path/to/venv/Scripts/Activate.ps1
+start docker redis: docker run -p 6381:6379 -d redis:5
+start daphne: daphne -p 8004 ChatGPTClone.asgi:application
+start celery: celery -A ChatGPTClone  worker -l info --without-gossip --without-mingle --without-heartbeat -Ofair --pool=solo
+start django: python manage.py runserver 8083

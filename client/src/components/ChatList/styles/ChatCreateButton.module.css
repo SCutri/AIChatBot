@@ -1,0 +1,17 @@
+/* src/components/ChatList/styles/ChatCreateButton.module.css */
+
+.newChatButton {
+  background-color: #480113; /* Same as sidebar background */
+  color: #FFFFFF; /* Same as text color */
+  border: 1.75px solid #FFFFFF; /* Light border color */
+  padding: 10px;
+  margin: 0px 16px 20px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: .05rem;
+}
+
+.newChatButton:hover {
+  background-color: #6b444c; /* Darker color for hover effect */
+}
